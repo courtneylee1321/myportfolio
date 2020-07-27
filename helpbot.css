@@ -134,7 +134,7 @@ li a:hover {
 
 .toc-nav a {
     color:#ccc;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     text-decoration: none;
 }
@@ -183,10 +183,13 @@ li a:hover {
 .project-intro {
     min-width: 100%;
     margin-top: 50px; 
-    height: 400px;
     background-color: white;
     padding: 20px 40px 20px 40px;
   
+}
+
+.project-intro-mobile {
+    display: none;
 }
 
 .header-title {
@@ -259,9 +262,9 @@ li a:hover {
 
 .process-header {
     background: #F0A160;
-    height: 100px;
-    margin-top: 280px;
+    margin-top: 50px;
     padding-top: 35px;
+    padding-bottom: 10px;
     
 }
 
@@ -312,7 +315,7 @@ li a:hover {
 }
 
 .process-padding {
-    padding-left: 60px;
+    padding-left: 10px;
     padding-right: 0px;
     margin-left: 50px;
 }
@@ -557,6 +560,11 @@ li a:hover {
     width: 100%;
 }
 
+ 
+.prototypes-mobile {
+        display: none;
+    }
+
 #post-onboard-adjust {
     margin-left: 250px;
     
@@ -704,10 +712,7 @@ li a:hover {
         margin-top: -60px;
     }
     
-    .process-header {
-        width: auto;
-    }
-    
+   
     .onboarding-title {
         top: 87%;
     }
@@ -716,11 +721,6 @@ li a:hover {
         margin-left: -450px;
     }
     
-    .footer-icons {
-    
-        
-    }
-  
 }
 
 @media screen and (max-width:1440px) and (orientation:landscape) {
@@ -754,10 +754,10 @@ li a:hover {
     }
     
     .process-header {
-        margin-top: 380px;
+        margin-top: 50px;
     }
     
-    .process-text {
+    .process-text, .indent, .bold-text{
         margin-right: 10px;
         font-size: 16px;
     }
@@ -872,22 +872,42 @@ li a:hover {
         font-size: 15px;
     }
     
+    .adjust-width {
+        margin-left: 0px;
+    }
+    
     
     .icon-size-adjust {
         margin-top: -38px;
     } 
     
-    .process-text, .bold-text {
+    
+    .table-of-contents-title {
+        font-size: 16px;
+    }
+    
+    
+    .toc-nav a {
+    color:#ccc;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+    
+    .process-text, .bold-text, .indent {
         margin-right: 150px;
         font-size: 15px;
         
     }
+    
+    
     .step-title, .table-contents-title {
         font-size: 18px;
         
     }
     
-    .process-text, .indent, #empathy-image-caption, .review-PR-caption, .ideation-caption, #onboard-sitemap-caption, .final-pov-padding, #paper-prototype-caption, #patterns-caption, #note-social-anxiety-caption, #POV-D3, .POV-caption  {
+    .indent, #empathy-image-caption, .review-PR-caption, .ideation-caption, #onboard-sitemap-caption, .final-pov-padding, #paper-prototype-caption, #patterns-caption, #note-social-anxiety-caption, #POV-D3, .POV-caption, .pre-onboarding-title, .onboarding-title, .post-onboard-title  {
         font-size: 13px;
     }
     
@@ -996,8 +1016,32 @@ li a:hover {
         margin-right: 0px;
     }
     
+    #step5-visuals {
+        padding-left: 0px;
+        margin-left: -20px;
+        
+    }
+    
     #step5-visuals-3 {
         margin-left: -60px;
+    
+        
+    }
+    
+    .step10-visuals {
+        width: 80%;
+    }
+    
+    .pre-onboarding-title {
+        transform: translate(-60px, 0px);
+    }
+    
+    .onboarding-title {
+        transform: translate(-30px, -165px);
+    }
+    
+    .post-onboard-title {
+        transform: translate(150px, 0px);
     }
     
     .footer-icons {
@@ -1018,12 +1062,1582 @@ li a:hover {
     font-weight: 500;
     
 }
+    .footer-icons {
+        transform: scale(.35,.35);
+    }
+    
     
     
     
 } 
 
+@media screen and (max-width:991.98px) and (orientation:landscape) {
+     #logo {
+        width: 70%;
+    }
+    
+    a {
+        font-size: 13px;
+    }
+    
+     .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .project-header {
+        margin-top: 130px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+     .header-title, .header-duration-title {
+        font-size: 18px;
+    }
+    
+    
+    .header-duration, .proj-titles, .header-caption {
+        font-size: 16px;
+    }
+    
+    .proj-details {
+        font-size: 14px;
+    }
+    
+    
+    .icon-size-adjust {
+        transform: scale(1,1);
+        margin-top: -12px;
+        margin-right: 20px;
+    }
+    
+    .icon-size-adjust-2 {
+        transform: scale(1.2,1.2);
+        margin-top: -20px;
+        margin-right: 18px;
+    }
+    
+    .process-header {
+        margin-top: 50px;
+    
+    }
+    
+    .process-padding {
+        margin-left: 10px;
+    }
+        
+    .toc-nav li.active > a {
+    font-weight: 700;
+    color: #F0A160;
+
+    }
+    
+    #ReviewPR, #DecideSA, #ResearchSA, #POV-UP, #Ideation, #Screening, #UsabilityTesting, #Patterns, #Prototype, #Outcomes {
+    padding-top: 130px;
+    
+    }
+    
+    .toc {
+        padding-left: 5px;
+    }
+    
+    .process-text, .indent, .bold-text {
+        font-size: 15px;
+        margin-right: 50px;
+    }
+    
+    .step1-visual {
+        margin-top: -50px;
+        margin-left: -100px;
+        transform: scale(.6,.6);
+    }
+    
+    #empathy-image-caption {
+        margin-top: -80px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 130px;
+    }
+    .indent {
+        margin-left: 20px;
+    }
+    
+    #step5-visuals {
+        margin-left: -150px;
+        transform: scale(.6,.6);
+    }
+    
+    #step5-visuals-3 {
+        transform: scale(.3,.3);
+        margin-left: -150px;
+    }
+    
+    #POV-D3 {
+        margin-left: -600px;
+        margin-top: -150px;
+    }
+    
+    #step6-visuals {
+        transform: scale(.25,.25);
+        margin-left: -700px;
+        margin-top: -280px;
+    }
+    
+    #onboard-sitemap-caption {
+        margin-top: -140px;
+        margin-left: -300px;
+    }
+    
+    #step7-visuals {
+        margin-left: -230px;
+        transform: scale(.5,.5);
+        margin-top: -200px;
+    }
+
+    .step8-visuals {
+        margin-left: -80px;
+    }
+    
+    #VA-size-adjust {
+        transform: scale(.5,.5);
+        margin-left: -220px;
+    }
+    
+    #paper-prototype-caption {
+        margin-top: -80px; 
+    }
+    
+    .onboarding-title {
+        transform: translate(-40px, -110px);
+    }
+    
+    .pre-onboarding-title {
+        transform: translate(-60px, -2px);
+        
+    }
+    
+    #post-onboard-adjust {
+        margin-left: 160px;
+        transform: scale(1.05,1.05)
+    }
+    
+    .post-onboard-title {
+        transform: translate(110px,0px);
+    }
+    
+     .footer-icons {
+        transform: scale(.2,.2);
+    }
+    
+    .icon-spacing, #resume-padding {
+        margin-right: -150px;
+    }
+    
+    #resume-padding {
+        margin-top: -13px;
+    }
+    
+    .icon-padding {
+        margin-right: 100px;
+        margin-bottom: -60px;
+    }
+    
+    .made-by-me {
+        font-size: 14px;
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width:767.98px) and (orientation:landscape) {
+     .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    
+    a {
+        font-size: 12px;
+    }
+    
+    .header-title, .header-caption {
+        margin-left: -30px;
+    }
+    
+    .header-title, .header-duration-title {
+        font-weight: 500;
+        
+    }
+    
+    .header-caption, .header-duration, .process-text {
+        font-size: 14px;
+    }
+    
+    
+    
+     .icon-size-adjust {
+        transform: scale(1.6,1.6);
+        padding-right: 25px;
+        padding-top: 5px;
+      
+    }
+    
+    .icon-size-adjust-2 {
+        transform: scale(1.7,1.7);
+        padding-right: 20px;
+        padding-top: 10px;
+      
+    }
+    
+    .process-padding {
+        margin-left: 50px;
+    }
+    
+    .adjust-width {
+        margin-top: -40px;
+    }
+    
+      .table-of-contents-title {
+        font-size: 16px;
+    }
+    
+    
+    .toc-nav a {
+    color:#ccc;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    }
+    
+     .step-title {
+        font-size: 17px;
+    }
+    
+    .step1-visual {
+        margin-top: -10px;
+        transform: scale(.9,.9);
+        margin-left: -150px;
+    }
+    
+    #empathy-image-caption {
+        margin-top: -40px;
+    }
+    
+    .step2-visuals {
+        margin-left: -55px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 70px;
+    }
+    
+    .step4-visuals {
+        transform: scale(.5,.5);
+        margin-top: -230px;
+        margin-left: -100px;
+    }
+    
+    #note-social-anxiety-caption {
+        margin-top: -260px;
+    }
+    
+    #step5-visuals {
+        transform: scale(.5,.5);
+        margin-left: -200px;
+        margin-top: -130px;
+    }
+    
+    #step5-visuals-3 {
+        transform: scale(.22,.22);
+        margin-left: -210px;
+        margin-top: -180px
+    }
+    
+    #POV-D3 {
+        margin-left: -520px;
+        margin-top: -180px;
+    }
+    
+    .final-pov-box {
+        width: 100%;
+    }
+    
+    #step6-visuals {
+        transform: scale(.23,.23);
+        margin-left: -720px;
+    }
+    
+    #onboard-sitemap-caption {
+        margin-left: -380px;
+    }
+    
+    #paper-prototype, .step6-visuals-2 {
+        transform: scale(1,1);
+        margin-left: 80px;        
+    }
+    
+    #paper-prototype-caption2, .ideation-caption {
+        margin-left: 85px;
+    }
+    
+    #step7-visuals {
+        transform: scale(.4,.4);
+        margin-left: -270px
+    }
+    
+    .step8-visuals {
+        margin-left: -30px;
+        margin-top: -50px;
+    }
+    
+    #VA-size-adjust {
+        transform: scale(.4,.4);
+        margin-top: -150px;
+        margin-left: -270px;
+    }
+    #paper-prototype-caption {
+        margin-top: -105px;
+    }
+    
+    #step9-visuals {
+        transform: scale(1,1);
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+    
+    #patterns-caption {
+        margin-top: 10px
+    }
+    
+    .pre-onboarding-title, .onboarding-title, .post-onboard-title {
+        font-size: 12px;
+    }
+    
+   
+    
+    .pre-onboarding-title {
+        transform: translate(-50px)
+    }
+    
+    .onboarding-title {
+        transform: translate(-40px,-70px);
+        
+    }
+    
+    .post-onboard-title {
+        transform: translate(50px);
+        
+    }
+    
+    .step10-visuals {
+        transform: scale(1.2,1.2);
+    }
+    
+    #post-onboard-adjust {
+        margin-left: 90px;
+    }
+    
+    .footer-icons {
+        transform: scale(.2,.2);
+    }
+    
+    .icon-spacing, #resume-padding {
+        margin-right: -135px;
+        
+    }
+    
+    .icon-padding {
+        margin-left: 18px;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:765px) and (orientation:landscape) {
+    .project-intro {
+        display: none;
+    }
+    
+    .project-intro-mobile {
+        display: contents;
+        padding-top: 20px;
+    }
+    
+    .padding {
+        margin-top: 20px;
+    }
+    
+    
+    .icon-size-adjust {
+        transform: scale(.5,.5);
+        margin-top: -60px;
+        margin-right: -5px; 
+    }
+    
+    .icon-size-adjust-2 {
+        transform: scale(.7,.7);
+        margin-top: -70px;
+        margin-right: -5px;
+    }
+    
+    .prototypes {
+        display: none;
+    }
+    
+    .prototypes-mobile {
+        display: contents;
+        margin-left: 50px;
+    }
+    
+    .step10-visuals {
+        transform: scale(1.8,1.8);
+        padding-bottom: 100px;
+        padding-left: 20px;
+        
+    }
+    
+    #pre-onboard-edit {
+        margin-top: 60px;
+    }
+    
+    .pre-onboarding-title {
+        transform: translate(-30px, -60px)
+        
+    }
+    
+    .onboarding-title {
+        transform: translate(-20px, -250px);
+    }
+    
+    .post-onboard-title {
+        transform: translate(-0px, -90px);
+    }
+    
+}
+
+@media screen and (max-width:575.98px) and (orientation:landscape) {
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    #logo {
+        width: 65%;
+    }
+    
+    .icon-size-adjust {
+        margin-top: -45px;
+        padding-right: 0px;
+    }
+    
+    .icon-size-adjust-2 {
+        margin-top: -60px;
+        padding-right: 0px;
+    }
+    .table-of-contents-title {
+        font-size: 14px;
+    }
+    
+    .toc-nav li a  {
+        font-size: 12px;
+        
+    }
+    .toc-padding {
+        padding-bottom: 5px;
+    }
+    
+    .process-padding {
+        margin-left: 25px;
+    }
+    
+    .step-title {
+        font-size: 15px;
+        padding-right: 30px;
+    }
+    
+    .process-text {
+        margin-right: 0px;
+    }
+    
+    .process-text, .bold-text, .indent {
+        font-size: 13px;
+        padding-right: 8px;
+    }
+    
+    .indent, #empathy-image-caption, .review-PR-caption, .ideation-caption, #onboard-sitemap-caption, .final-pov-padding, #paper-prototype-caption, #patterns-caption, #note-social-anxiety-caption, #POV-D3, .POV-caption, .pre-onboarding-title, .onboarding-title, .post-onboard-title  {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    
+    .step1-visual {
+        margin-left: -10px;
+        transform: scale(1.2,1.2);
+        margin-top: 15px;
+        
+    }
+    
+    #empathy-image-caption {
+        margin-top: -20px;
+        padding-right: 32px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .step2-visuals {
+        margin-left: -40px;
+        transform: scale(.85,.85);
+    }
+    
+    .indent {
+        margin-left: 15px;
+        padding-right: 40px;
+    }
+    
+    .bold-text {
+        margin-right: 0px;
+    }
+    
+    .step4-visuals {
+        transform: scale(.35,.35);
+        margin-top: -320px;
+        margin-left: -190px;
+        
+    }
+    
+    #note-social-anxiety-caption {
+        padding-left: 50px;
+        margin-top: -350px;
+
+    }
+    
+    #step5-visuals {
+        transform: scale(.3,.3);
+        margin-left: -290px;
+        margin-top: -200px;
+        margin-bottom: -150px;
+    }
+    
+    #step5-visuals-3 {
+        transform: scale(.14,.14);
+        margin-left: -280px;
+    }
+    
+    #POV-D3 {
+        margin-left: -480px;
+    }
+    
+    .final-pov-box {
+        width: 85%;
+    }
+    
+    #step6-visuals {
+        transform: scale(.14,.14);
+        margin-left: -800px;
+        margin-top: -350px;
+    }
+    
+    #onboard-sitemap-caption {
+        margin-top: -180px;
+    }
+    
+    .step6-visuals-2, #paper-prototype {
+        margin-left: 50px;
+    }
+    
+    .ideation-caption, #paper-prototype-caption2  {
+        margin-left: 50px;
+    }
+    
+    #step7-visuals {
+        transform: scale(.3,.3);
+        margin-top: -320px;
+        margin-left: -320px;
+        margin-bottom: -280px;
+    }
+    
+    .pain-point-box {
+        padding-left: 20px;
+    }
+    
+    .step8-visuals {
+        margin-left: -10px;
+    }
+    
+    #VA-size-adjust {
+        transform: scale(.3,.3);
+        margin-left: -310px;
+        margin-top: -200px;
+    }
+    #paper-prototype-caption {
+        margin-top: -135px;
+        margin-left: -0px;
+        padding-right: 15px;
+        text-align: left;
+    }
+    
+    #patterns-caption {
+        text-align: left;
+        margin-left: -300px;
+    }
+    
+    .pre-onboarding-title {
+        margin-right: -20px;
+    }
+    
+    .onboarding-title {
+        transform: translate(-20px, -215px)
+    }
+    
+    .post-onboard-title {
+        transform: translate(-15px, -90px)
+    }
+    
+    .footer-icons {
+        transform: scale(.3,.3);
+    }
+    
+    .icon-spacing {
+        margin-left: -90px;
+        margin-right: 10px;
+    }
+    
+    .icon-padding {
+        padding-bottom: 50px;
+        margin-right: 45px;
+        margin-left: 60px
+    }
+   
+    #resume-padding {
+        margin-right: 15px;
+        margin-top: -11px;
+    }
+    
+ 
+    
+}
 
 
+
+@media screen and (max-width:1199px) and (orientation:portrait) {
+    .icon-size-adjust {
+        margin-top: -32px;
+        
+    }
+    
+    .icon-size-adjust-2 {
+        margin-top: -40px;
+    }
+    
+    
+    .step1-visual {
+        margin-top: -90px;
+        margin-left: -100px;
+        transform: scale(.6,.6);
+    
+        
+    }
+    
+    #empathy-image-caption {
+        margin-top: -50px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 200px;
+    }
+    
+    .process-text {
+        margin-right: 165px;
+    }
+    
+    #pov-padding-2 {
+        margin-left: -490px;
+    }
+    
+    .final-pov-box {
+        width: 80%;
+    }
+    
+    #step6-visuals {
+        transform: scale(.35,.35);
+        margin-left: -600px;
+        margin-top: -190px;   
+    }
+    
+    .step8-visuals {
+        margin-left: 50px;
+    }
+    
+    .step8-visuals-2 {
+        margin-left: -140px;
+    }
+    
+    #paper-prototype-caption {
+        margin-left: -100px;
+    }
+    
+    #step9-visuals {
+        margin-left: 50px;
+    }
+   
+    
+    #onboard-sitemap-caption {
+        margin-top: -80px;
+        padding-left: 220px;
+    }
+    
+    
+    .pain-point-box-padding {
+        margin-right: 0px;
+    }
+    
+    #step5-visuals {
+        padding-left: 0px;
+        margin-left: -20px;
+        
+    }
+    
+    #step5-visuals-3 {
+        margin-left: -20px;
+
+    }
+    
+    .step10-visuals {
+        width: 80%;
+    }
+    
+    .pre-onboarding-title {
+        transform: translate(-65px, -5px);
+    }
+    
+    .onboarding-title {
+        transform: translate(-50px, -5px);
+    }
+    
+    .post-onboard-title {
+        transform: translate(90px, 0px);
+    }
+    
+    #post-onboard-adjust {
+        margin-left: 200px;
+    }
+    
+    .footer-icons {
+        transform: scale(.35,.35);
+    }
+    
+    .toc-nav a {
+    color:#ccc;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    overflow-x: hidden;
+    }
+
+    
+    .toc-nav a:hover, .toc-nav a:focus {
+    color: #F0A160;
+    font-weight: 500;
+    
+}
+    .footer-icons {
+        transform: scale(.35,.35);
+    }
+    
+    
+}
+
+@media screen and (max-width:991.98px) and (orientation:portrait) {
+       #logo {
+        width: 70%;
+    }
+    
+    a {
+        font-size: 13px;
+    }
+    
+     .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    .project-header {
+        margin-top: 130px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+     .header-title, .header-duration-title {
+        font-size: 18px;
+    }
+    
+    
+    .header-duration, .proj-titles, .header-caption {
+        font-size: 16px;
+    }
+    
+    .proj-details {
+        font-size: 14px;
+    }
+    
+    
+    .icon-size-adjust {
+        transform: scale(1,1);
+        margin-top: -12px;
+        margin-right: 20px;
+    }
+    
+    .icon-size-adjust-2 {
+        transform: scale(1.2,1.2);
+        margin-top: -20px;
+        margin-right: 18px;
+    }
+    
+    .process-header {
+        margin-top: 50px;
+    
+    }
+    
+    .process-padding {
+        margin-left: 35px;
+    }
+        
+    .toc-nav li.active > a {
+    font-weight: 700;
+    color: #F0A160;
+
+    }
+    
+    #ReviewPR, #DecideSA, #ResearchSA, #POV-UP, #Ideation, #Screening, #UsabilityTesting, #Patterns, #Prototype, #Outcomes {
+    padding-top: 130px;
+    
+    }
+    
+    .toc {
+        padding-left: 5px;
+    }
+    
+    .process-text {
+        font-size: 15px;
+        margin-right: 120px;
+    }
+    
+    .step1-visual {
+        margin-top: -70px;
+        margin-left: -100px;
+        transform: scale(.6,.6);
+    }
+    
+    #empathy-image-caption {
+        margin-top: -80px;
+    }
+    
+    #pov-padding {
+        margin-left: -40px;
+    }
+    
+    #pov-padding-2 {
+        margin-top: -60px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 130px;
+    }
+    .indent {
+        margin-left: 20px;
+    }
+    
+    #step5-visuals {
+        margin-left: -150px;
+        transform: scale(.6,.6);
+    }
+    
+    #step5-visuals-3 {
+        transform: scale(.3,.3);
+        margin-left: -150px;
+    }
+    
+    #POV-D3 {
+        margin-left: -600px;
+        margin-top: -150px;
+    }
+    
+    #step6-visuals {
+        transform: scale(.25,.25);
+        margin-left: -600px;
+        margin-top: -280px;
+    }
+    
+    #onboard-sitemap-caption {
+        margin-top: -140px;
+        margin-left: -50px;
+    }
+    
+    #step7-visuals {
+        margin-left: -230px;
+        transform: scale(.5,.5);
+        margin-top: -200px;
+    }
+
+    .step8-visuals {
+        margin-left: -80px;
+    }
+    
+    #VA-size-adjust {
+        transform: scale(.5,.5);
+        margin-left: -220px;
+        margin-top: -140px;
+    }
+    
+    #paper-prototype-caption {
+        margin-top: -80px;
+        margin-left: -280px;
+    }
+    
+    #paper-prototype-caption2 {
+        margin-left: -76px
+    }
+    
+    .step10-visuals {
+        width: 80%;
+    }
+    
+    .pre-onboarding-title, .onboarding-title, .post-onboard-title {
+        font-size: 16px;
+    }
+    
+    .onboarding-title {
+        transform: translate(-120px, -10px);
+    }
+    
+    .pre-onboarding-title {
+        transform: translate(-70px, -2px);
+        
+    
+    }
+    
+    #onboard-edit {
+        margin-left: -140px;
+    }
+        
+    
+    #post-onboard-adjust {
+        margin-left: 180px;
+        transform: scale(1.05,1.05)
+    }
+    
+    .post-onboard-title {
+        transform: translate(80px,0px);
+    }
+    
+    #click-prototype {
+        margin-left: -20px;
+    }
+    
+     .footer-icons {
+        transform: scale(.2,.2);
+    }
+    
+    .icon-spacing, #resume-padding {
+        margin-right: -150px;
+    }
+    
+    #resume-padding {
+        margin-top: -13px;
+    }
+    
+    .icon-padding {
+        margin-right: 100px;
+        margin-bottom: -60px;
+    }
+    
+    .made-by-me {
+        font-size: 14px;
+        margin-left: 50px;
+    }
+    
+    
+}
+
+@media screen and (max-width:767.98px) and (orientation:portrait) {
+     .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    
+    a {
+        font-size: 12px;
+    }
+    
+    .header-title, .header-caption {
+        margin-left: -30px;
+    }
+    
+    .header-title, .header-duration-title {
+        font-weight: 500;
+        
+    }
+    
+    .header-caption, .header-duration, .process-text, .indent, .bold-text {
+        font-size: 14px;
+    }
+    
+    .process-text {
+        margin-right: 0px;
+    }
+    
+    
+    
+     .icon-size-adjust {
+        transform: scale(1.6,1.6);
+        padding-right: 25px;
+        padding-top: 5px;
+      
+    }
+    
+    .icon-size-adjust-2 {
+        transform: scale(1.7,1.7);
+        padding-right: 20px;
+        padding-top: 10px;
+      
+    }
+    
+    .process-padding {
+        margin-left: 50px;
+    }
+    
+    .adjust-width {
+        margin-top: -40px;
+    }
+    
+    .table-of-contents-title {
+        font-size: 16px;
+    }
+    
+    
+    .toc-nav a {
+    color:#ccc;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    }
+    
+     .step-title {
+        font-size: 17px;
+    }
+    
+    .step1-visual {
+        margin-top: 0px;
+        transform: scale(.9,.9);
+        margin-left: 0px;
+    }
+    
+    #empathy-image-caption, .review-PR-caption, .ideation-caption, #onboard-sitemap-caption, .final-pov-padding, #paper-prototype-caption, #patterns-caption, #note-social-anxiety-caption, #POV-D3, .POV-caption
+  {
+        font-size: 13px;
+        
+    }
+    
+    #empathy-image-caption {
+        margin-top: 0px;
+    }
+    
+    .step2-visuals {
+        margin-left: -55px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 70px;
+    }
+    
+    .step4-visuals {
+        transform: scale(.5,.5);
+        margin-top: -230px;
+        margin-left: -100px;
+    }
+    
+    #note-social-anxiety-caption {
+        margin-top: -260px;
+    }
+    
+    #step5-visuals {
+        transform: scale(.5,.5);
+        margin-left: -200px;
+        margin-top: -130px;
+    }
+    
+    #step5-visuals-3 {
+        transform: scale(.22,.22);
+        margin-left: -220px;
+        margin-top: -100px
+    }
+    
+    #POV-D3 {
+        margin-left: -520px;
+        margin-top: -180px;
+    }
+    
+    .final-pov-box {
+        width: 100%;
+    }
+    
+    #step6-visuals {
+        transform: scale(.23,.23);
+        margin-left: -720px;
+    }
+    
+    #onboard-sitemap-caption {
+        margin-left: -150px;
+    }
+    
+    #paper-prototype, .step6-visuals-2 {
+        transform: scale(1,1);
+        margin-left: 80px;        
+    }
+    
+    #paper-prototype-caption2, .ideation-caption {
+        margin-left: 85px;
+    }
+    
+    #step7-visuals {
+        transform: scale(.4,.4);
+        margin-left: -270px
+    }
+    
+    .step8-visuals {
+        margin-left: -30px;
+        margin-top: -50px;
+    }
+    
+    #VA-size-adjust {
+        transform: scale(.4,.4);
+        margin-top: -150px;
+        margin-left: -270px;
+    }
+    #paper-prototype-caption {
+        margin-top: -105px;
+        margin-right: -220px;
+    }
+    
+    #step9-visuals {
+        transform: scale(1,1);
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+    
+    #patterns-caption {
+        margin-top: 10px;
+        margin-left: -300px
+    }
+    
+    .pre-onboarding-title, .onboarding-title, .post-onboard-title {
+        font-size: 12px;
+    }
+    
+    .step10-visuals {
+        width: 90%;
+    }
+    
+    #onboard-edit {
+        margin-left: 0px;
+        
+    }
+    
+    .pre-onboarding-title {
+        transform:translate(-50px, -2px);
+        margin-right: -10px;
+    }
+    
+    .onboarding-title {
+        transform: translate(-30px,-5px);
+        
+    }
+    
+    .post-onboard-title {
+        transform: translate(30px);
+        
+    }
+    
+    .step10-visuals {
+        transform: scale(1.2,1.2);
+    }
+    
+    #post-onboard-adjust {
+        margin-left: 90px;
+    }
+    
+    .footer-icons {
+        transform: scale(.2,.2);
+    }
+    
+    .icon-spacing, #resume-padding {
+        margin-right: -135px;
+        
+    }
+    
+    .icon-padding {
+        margin-left: 18px;
+    }
+    
+}
+
+@media screen and (max-width:765px) and (orientation:portrait) {
+     .project-intro {
+        display: none;
+    }
+    
+    .project-intro-mobile {
+        display: contents;
+        padding-top: 20px;
+    }
+    
+    .padding {
+        margin-top: 20px;
+    }
+    
+    
+    .icon-size-adjust {
+        transform: scale(.45,.45);
+        margin-top: -60px;
+        margin-right: -5px; 
+    }
+    
+    .icon-size-adjust-2 {
+        transform: scale(.65,.65);
+        margin-top: -70px;
+        margin-right: -5px;
+    }
+    
+    .prototypes {
+        display: none;
+    }
+    
+    .prototypes-mobile {
+        display: contents;
+        margin-left: 60px;
+    }
+    
+    .step10-visuals {
+        transform: scale(1.8,1.8);
+        padding-bottom: 100px;
+        padding-left: 30px;
+        
+    }
+    
+    #pre-onboard-edit {
+        margin-top: 60px;
+    }
+    
+    .pre-onboarding-title {
+        transform: translate(-30px, -60px)
+        
+    }
+    
+    .onboarding-title {
+        transform: translate(-10px, -90px);
+    }
+    
+    .post-onboard-title {
+        transform: translate(-20px, -90px);
+    }
+    
+    
+}
+
+@media screen and (max-width:575.98px) and (orientation:portrait) {
+      .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    #logo {
+        width: 65%;
+    }
+    
+    .icon-size-adjust {
+        margin-top: -45px;
+        padding-right: 0px;
+    }
+    
+    .icon-size-adjust-2 {
+        margin-top: -60px;
+        padding-right: 0px;
+    }
+    .table-of-contents-title {
+        font-size: 14px;
+    }
+    
+    .toc-nav li a  {
+        font-size: 12px;
+        
+    }
+    .toc-padding {
+        padding-bottom: 5px;
+    }
+    
+    .process-padding {
+        margin-left: 30px;
+        margin-right: 150px;
+    }
+    
+    .step-title {
+        font-size: 15px;
+        padding-right: 30px;
+    }
+    
+    .process-text {
+        margin-right: -20px;
+    }
+    
+    .process-text, .bold-text, .indent {
+        font-size: 13px;
+        padding-right: 8px;
+    }
+    
+    .indent, #empathy-image-caption, .review-PR-caption, .ideation-caption, #onboard-sitemap-caption, .final-pov-padding, #paper-prototype-caption, #patterns-caption, #note-social-anxiety-caption, #POV-D3, .POV-caption, .pre-onboarding-title, .onboarding-title, .post-onboard-title  {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+    
+    .step1-visual {
+        margin-left: -10px;
+        transform: scale(1.2,1.2);
+        margin-top: 15px;
+        
+    }
+    
+    #empathy-image-caption {
+        margin-top: 30px;
+        padding-right: 32px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    } 
+    
+    .step2-visuals {
+        margin-left: -10px;
+        transform: scale(.9,.9);
+    }
+    
+    .indent {
+        margin-left: 15px;
+        padding-right: 40px;
+    }
+    
+    .bold-text {
+        margin-right: 0px;
+    }
+    
+    .step4-visuals {
+        transform: scale(.35,.35);
+        margin-top: -320px;
+        margin-left: -190px;
+        
+    }
+    
+    #note-social-anxiety-caption {
+        padding-left: 50px;
+        margin-top: -350px;
+
+    }
+    
+    #step5-visuals {
+        transform: scale(.3,.3);
+        margin-left: -290px;
+        margin-top: -200px;
+        margin-bottom: -150px;
+    }
+    
+    #step5-visuals-3 {
+        transform: scale(.14,.14);
+        margin-left: -280px;
+        margin-top: -130px;
+    }
+    
+    #POV-D3 {
+        margin-left: -470px;
+    }
+    
+    .final-pov-box {
+        width: 85%;
+    }
+    
+    #step6-visuals {
+        transform: scale(.14,.14);
+        margin-left: -800px;
+        margin-top: -350px;
+    }
+    
+    #onboard-sitemap-caption {
+        margin-top: -180px;
+    }
+    
+    .step6-visuals-2, #paper-prototype {
+        margin-left: 50px;
+    }
+    
+    .ideation-caption, #paper-prototype-caption2  {
+        margin-left: 50px;
+    }
+    
+    #step7-visuals {
+        transform: scale(.3,.3);
+        margin-top: -320px;
+        margin-left: -320px;
+        margin-bottom: -280px;
+    }
+    
+    .pain-point-box {
+        padding-left: 20px;
+    }
+    
+    .step8-visuals {
+        margin-left: -10px;
+    }
+    
+    #VA-size-adjust {
+        transform: scale(.3,.3);
+        margin-left: -310px;
+        margin-top: -200px;
+    }
+    #paper-prototype-caption {
+        margin-top: -135px;
+        margin-left: -0px;
+        padding-right: 15px;
+        text-align: left;
+        margin-right: 0px;
+    }
+    
+    #patterns-caption {
+        text-align: left;
+        margin-left: -300px;
+    }
+    
+    .pre-onboarding-title {
+        margin-right: -20px;
+        transform: translate(-20px,-60px);
+    }
+    
+    .onboarding-title {
+        transform: translate(-10px, -90px);
+    
+    }
+    
+    .post-onboard-title {
+        transform: translate(-20px, -90px);
+        margin-right: -20px;
+    }
+    
+    .footer-icons {
+        transform: scale(.3,.3);
+    }
+    
+    .icon-spacing {
+        margin-left: -90px;
+        margin-right: 10px;
+    }
+    
+    .icon-padding {
+        padding-bottom: 50px;
+        margin-right: 45px;
+        margin-left: 60px
+    }
+   
+    #resume-padding {
+        margin-right: 15px;
+        margin-top: -11px;
+    }
+    
+ 
+    
+}
+
+@media screen and (max-width:475px) and (orientation:portrait) {
+    .col-2 {
+        max-width: 13%;
+    }
+    
+    
+    .header-title , .header-duration-title {
+        font-size: 16px; 
+    }
+    
+    .header-title {
+        padding-top: 5px;
+    }
+    
+    .header-caption, .header-duration {
+        font-size: 12px;
+    }
+    
+    .icon-size-adjust {
+        margin-top: -22px;
+    }
+    
+    .icon-size-adjust-2 {
+        margin-top: -40px;
+    }
+    
+    .proj-titles {
+        padding-left: 10px;
+    }
+    
+    .proj-details {
+        margin-right: 15px;
+    }
+    .process-text {
+        padding: 10px;
+        padding-right: 20px;
+        margin-right: 10px;
+    }
+    
+    .step1-visual {
+        transform: scale(1,1);
+        margin-left: -20px;
+    }
+    
+    .review-PR-caption {
+        margin-left: 45px;
+    }
+    
+    #pov-padding {
+        margin-left: -20px;
+    }
+    
+    #pov-padding-2 { 
+        margin-left: -480px;
+    
+    }
+    
+    #onboard-sitemap-caption {
+        margin-right: -20px;
+        padding-left: 160px;
+    }
+    
+    #step9-visuals {
+        transform: scale(.9,.9);
+    }
+    
+    #patterns-caption {
+        margin-left: -280px;
+    }
+    
+    
+
+    
+    
+}
+
+@media screen and (max-width:375px) and (orientation:portrait) {
+    .process-padding {
+        width: 10%;
+    }
+    
+}
 
 
