@@ -171,6 +171,68 @@ li a:hover {
     padding-top: 35px;
 }
 
+/* Modal */
+
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+
+    
+}
+
+.carousel-control-prev-icon {
+    background-image: url(previous-arrow-07.svg);
+    transform: scale(2.8,2.8) translate(-15px, -8px);    
+}
+
+.carousel-control-next-icon {
+    background-image: url(next-arrow-08.svg);
+    transform: scale(2.8,2.8) translate(15px, -8px);    
+
+    
+}
+
+.ps-modal {
+    padding: 40px;
+    
+}
+
+
+.modal-gif {
+    padding: 16px 80px 100px 80px;
+   
+}
+
+.modal-caption {
+    text-align:center;
+    padding-top: 50px;
+    
+
+    
+}
+
+.modal-caption-2 {
+    padding-top: 20px;
+}
+
+.carousel-indicators {
+    padding-top: 250px;
+    margin-bottom: -80px;
+}
+
+.carousel-indicators li {
+    background-color: #F0A160;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.image-resize-modal {
+    width: 100%;
+    
+}
+
+
 /* Process */
 
 .process-header {
@@ -206,7 +268,6 @@ li a:hover {
 
 #pic-caption {
     font-size: 16px;
-    padding-left: 55px;
 }
 .step-spacing {
     margin-top: 200px;
@@ -416,6 +477,14 @@ li a:hover {
         height: 170px; 
        
     }
+    
+    .modal-adjust {
+        max-width: 400px;
+    }
+    
+    .modal-adjust-2 {
+        width: 420px;
+    }
 }
 
 @media screen and (max-width:991.98px) and (orientation:landscape) {
@@ -435,7 +504,6 @@ li a:hover {
     
     .project-header {
         margin-top: 130px;
-        width: auto;
         height: 130px;
         padding-top: 30px;
         padding-bottom: 10px;
@@ -538,6 +606,16 @@ li a:hover {
     
     .image-resize {
         transform: scale(.9,.9)
+    }
+    
+    #pic-adjust {
+        transform: scale(1.5,1.5);
+        padding-left: 0px; 
+        padding-right: 20px;
+    }
+    
+    #pic-caption {
+        margin-left: -45px;
     }
 
     #pic-caption, #caption2 {
@@ -755,6 +833,21 @@ li a:hover {
         transform: scale(.3,.3);
     }
     
+    .modal-adjust-3 {
+        max-width: 500px;
+        margin-left: 40px;
+    }
+    
+    .modal-adjust {
+        margin-left: 100px;
+    }
+    
+    .modal-adjust-2 {
+        max-width: 380px;
+        margin-left: 100px;
+        
+    }
+    
     
 }
 
@@ -762,7 +855,6 @@ li a:hover {
 
 @media screen and (max-width:1199.98px) and (orientation:portrait) {
     .project-header {
-        height: 180px;
     }
     .icon-size-adjust {
         margin-top: -30px;
@@ -774,6 +866,10 @@ li a:hover {
     
     .project-intro {
         height: 350px;
+    }
+    
+    .footer-icons {
+        transform: scale(.4,.4);    
     }
 }
 
@@ -863,6 +959,13 @@ li a:hover {
     
     .made-by-me {
         font-size: 14px;
+    }
+    
+    .modal-adjust{
+        max-width: 500px;
+    }
+    .modal-adjust-3 {
+        max-width: 700px;
     }
 }
 
@@ -1051,7 +1154,16 @@ li a:hover {
         padding-right: 35px;
         padding-left: 35px;
     }
-
+    
+    .modal-adjust {
+        margin-left: 40px;
+    }
+    
+    .modal-adjust-2 {
+        max-width: 450px;
+        margin-left: 60px;
+    }
+    
     
 }
 
@@ -1088,6 +1200,22 @@ li a:hover {
    
     .icon-padding {
         margin-left: 90px;
+    }
+    
+     .modal-adjust-3 {
+        max-width: 400px;
+        margin-left: 40px;
+         
+    }
+    
+    .modal-adjust {
+        max-width: 400px;
+        margin-left: 50px;
+    }
+    
+    .modal-adjust-2 {
+        max-width: 400px;
+        margin-left: 40px;
     }
     
 }
@@ -1133,6 +1261,18 @@ li a:hover {
         transform: scale(1.1,1.1);
     }
     
+     .modal-adjust-3 {
+        margin-left: 20px;
+         
+    }
+    
+    .modal-adjust {
+        margin-left: 10px;
+    }
+    
+    .modal-adjust-2 {
+        margin-left: 20px;
+    }
     
     
 }
