@@ -161,8 +161,53 @@ li a:hover {
 
 }
 
+/* Modal */
 
+.carousel-indicators li {
+    background-color: #F0A160;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+  
+}
 
+.carousel-indicators {
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(previous-arrow-07.svg);
+    transform: scale(4,4) translate(-55px, -8px);    
+}
+
+.carousel-control-next-icon {
+    background-image: url(next-arrow-08.svg);
+    transform: scale(4,4) translate(55px, -8px);    
+
+    
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.modal-caption {
+    color: black;
+    margin-bottom: 80px;
+}
+
+.prototype-frame {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 800px; 
+    height: 450px;
+    margin-left: 120px;
+    margin-bottom: 80px;
+}
+
+#empathy-map {
+    transform: scale(.9,.9);
+}
 
 
 /* Helpbot page */ 
@@ -585,7 +630,7 @@ li a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50px, -210px);
+    transform: translate(-50px, 0px);
     font-size: 18px;
     
 }
