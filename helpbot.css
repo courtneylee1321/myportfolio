@@ -168,6 +168,7 @@ li a:hover {
     width: 11px;
     height: 11px;
     border-radius: 100%;
+    align-content: center;
   
 }
 
@@ -188,6 +189,10 @@ li a:hover {
     
 }
 
+.paper-prototype-modal {
+    transform: scale(1,1)!important;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -195,20 +200,84 @@ li a:hover {
 .modal-caption {
     color: black;
     margin-bottom: 80px;
+    text-align: left;
+    margin-left: 55px;
+    font-size: 18px;
+    padding: 10px;
 }
+
+
+.prototype-modal-caption {
+    color: black;
+    margin-bottom: 80px;
+    text-align: left;
+    margin-left: 55px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+#caption-social-anxiety, #caption-paper-prototype {
+    text-align: center;
+    margin-bottom: 120px;
+    margin-right: 100px;
+
+}
+
+#draft3-caption {
+    margin-top: 40px;
+    
+}
+
 
 .prototype-frame {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    width: 800px; 
-    height: 450px;
-    margin-left: 120px;
+    width: 900px; 
+    height: 550px;
+    margin-left: 70px;
     margin-bottom: 80px;
 }
 
-#empathy-map {
-    transform: scale(.9,.9);
+#empathy-map, #potential-users-modal, #potential-problems-modal, #user-persona-modal, #draft1-modal, #draft2-modal, #draft3-modal, #onboard-sitemap-modal, #ideation-modal, #VA-modal {
+    transform: scale(.9,.9)!important;
 }
 
+#notes-about-social-anxiety-modal {
+    transform: scale(.5,.5);
+    margin-top: -450px;
+    margin-bottom: -400px;
+}
+#paper-prototype-modal {
+    transform: scale(.7,.7)!important;
+    margin-top: -180px;
+    margin-bottom:-180px;
+}
+
+
+#screener-q-modal {
+    transform: scale(.8,.8);
+    margin-top: -80px;
+    margin-bottom: -50px;
+}
+
+#research-pattern-modal {
+    transform: scale(.95,.95)
+    
+}
+
+
+/* Magnify Pictures */
+
+.magnify-glass-container {
+    position: relative;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+
+}
 
 /* Helpbot page */ 
 
@@ -766,6 +835,10 @@ li a:hover {
         margin-left: -450px;
     }
     
+    .step1-visual {
+        margin-left: -400px;
+    }
+    
 }
 
 @media screen and (max-width:1440px) and (orientation:landscape) {
@@ -893,6 +966,76 @@ li a:hover {
         left: 40%;
     }
     
+    .modal-xl {
+    max-width: 1100px;
+    
+    
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(3,3) translate(-55px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(3,3) translate(55px, -8px);    
+
+    
+    }
+    
+    .modal-caption {
+        font-size: 16px;
+        margin-left: 100px;
+    }
+    
+    .prototype-modal-caption {
+        font-size: 16px;
+    }
+    
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+#emapthy-map {
+        margin-top: -600px;
+    }
+    
+#empathy-map, #potential-users-modal, #potential-problems-modal, #user-persona-modal, #draft1-modal, #draft2-modal, #draft3-modal, #onboard-sitemap-modal, #ideation-modal {
+    transform: scale(.8,.8)!important;
+}
+    
+#VA-modal {
+    transform: scale(.7,.7)!important;
+    margin-top: -100px;
+    margin-bottom: -80px;
+        
+    }
+    
+
+
+#notes-about-social-anxiety-modal {
+    transform: scale(.5,.5);
+    margin-top: -450px;
+    margin-bottom: -400px;
+}
+#paper-prototype-modal {
+    transform: scale(.6,.6)!important;
+    margin-top: -280px;
+    margin-bottom:-280px;
+}
+
+
+#screener-q-modal {
+    transform: scale(.7,.7);
+    margin-top: -120px;
+    margin-bottom: -120px;
+}
+    
+.prototype-frame {
+    width: 800px; 
+    height: 450px;
+        
+    } 
     
 }
 
@@ -975,7 +1118,6 @@ li a:hover {
     }
     
 
-
  
     #VA-size-adjust {
         transform: scale(.65,.65);
@@ -1014,7 +1156,78 @@ li a:hover {
         top: 120%;
         transform: translate(-30px,-195px)
     }
+    
+    .modal-xl {
+    max-width: 1000px;
+    
+    }
+    
+    
+    #emapthy-map {
+        margin-top: -600px;
+    }
+    
+#potential-users-modal, #potential-problems-modal, #user-persona-modal, #draft1-modal, #draft2-modal, #draft3-modal, #onboard-sitemap-modal {
+    transform: scale(.7,.7)!important;
+}
+    
+#empathy-map {
+    transform: scale(.7,.7)!important;
+    margin-top: -100px;
+    margin-bottom:-50px;
+        
+}
+#ideation-modal {
+    margin-bottom: -50px;
+    margin-top:-50px;
+    
+}
+    
+#VA-modal {
+    transform: scale(.7,.7)!important;
+    margin-top: -100px;
+    margin-bottom: -80px;
+        
+    }
+    
 
+
+#notes-about-social-anxiety-modal {
+    transform: scale(.5,.5);
+    margin-top: -450px;
+    margin-bottom: -400px;
+}
+#paper-prototype-modal {
+    transform: scale(.5,.5)!important;
+    margin-top: -320px;
+    margin-bottom:-330px;
+}
+    
+#caption-paper-prototype {
+    margin-bottom: 80px;
+        
+    }
+    
+
+
+#screener-q-modal {
+    transform: scale(.6,.6);
+    margin-top: -170px;
+    margin-bottom: -180px;
+}
+    
+.prototype-frame {
+    width: 800px; 
+    height: 450px;
+        
+    } 
+    
+#pattern-caption-modal {
+    margin-left: 20px;
+        
+    }
+    
+    
     
 }
 
@@ -1027,8 +1240,10 @@ li a:hover {
     
     
     .step1-visual {
-        margin-top: -150px;
-        padding-left: 120px;
+        margin-top: -100px;
+        margin-left: -250px;
+        margin-bottom: 50px;
+        
     }
     
     #empathy-image-caption {
@@ -1110,6 +1325,51 @@ li a:hover {
     .footer-icons {
         transform: scale(.35,.35);
     }
+    
+    .modal-xl {
+        max-width: 820px;
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(2.8,2.8) translate(-45px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2.8,2.8) translate(45px, -8px);    
+
+    
+    }
+    
+    #notes-about-social-anxiety-modal {
+    transform: scale(.45,.45);
+    margin-top: -350px;
+    margin-bottom: -380px;
+
+    }
+    
+    #caption-social-anxiety {
+        margin-bottom: 80px;
+    }
+    
+    #paper-prototype-modal {
+    transform: scale(.45,.45)!important;
+    margin-top: -300px;
+    margin-bottom:-300px;
+}
+    #screener-q-modal {
+    margin-top: -160px;
+    margin-bottom: -150px;
+}
+    
+    .prototype-frame {
+    width: 700px; 
+    height: 350px;
+    margin-bottom: -1px;
+        
+    } 
+    
+    
     
     
     
@@ -1359,9 +1619,10 @@ li a:hover {
     }
     
     .step1-visual {
-        margin-top: -10px;
+        margin-top: 0px;
         transform: scale(.9,.9);
-        margin-left: -150px;
+        margin-left: -110px;
+        
     }
     
     #empathy-image-caption {
@@ -1495,6 +1756,74 @@ li a:hover {
         margin-left: 18px;
     }
     
+    .modal-xl {
+        max-width: 600px;
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(2.8,2.8) translate(-35px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2.8,2.8) translate(35px, -8px);    
+
+    
+    }
+    
+    .modal-caption {
+        font-size: 12px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .prototype-modal-caption {
+        font-size: 12px;
+    }
+    
+    #notes-about-social-anxiety-modal {
+        transform: scale(.5,.5)!important;
+        margin-bottom: -200px;
+        margin-top: -250px;
+    }
+    
+    #caption-social-anxiety {
+        margin-left: 120px;
+    }
+    
+    #ideation-modal {
+        margin-bottom: -20px;
+    }
+    
+    #paper-prototype-modal {
+        margin-top: -150px;
+        margin-bottom: -150px;
+        transform: scale(.6,.6)!important
+        
+    }
+    
+    #caption-paper-prototype {
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    
+    #screener-q-modal {
+        margin-top: -100px;
+        margin-bottom: -80px;
+        transform: scale(.65,.66)
+    }
+    
+    #VA-modal {
+        margin-bottom: -50px;
+    }
+    
+    .prototype-frame {
+        width: 400px;
+        height: 350px;
+    }
+    
+    
+  
     
     
 }
@@ -1616,7 +1945,7 @@ li a:hover {
     }
     
     .step1-visual {
-        margin-left: -10px;
+        margin-left: -100px;
         transform: scale(1.2,1.2);
         margin-top: 15px;
         
@@ -1761,13 +2090,85 @@ li a:hover {
         margin-top: -11px;
     }
     
+    .modal-xl {
+        max-width: 450px;
+    }
+    
+    .modal-dialog {
+        margin-left: 80px;
+        
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(2.5,2.5) translate(-30px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2.5,2.5) translate(30px, -8px);    
+
+    
+    }
+    
+    #empathy-map {
+        margin-top: -50px;
+        margin-bottom: -20px;
+    }
+    
+    #potential-users-modal, #potential-problems-modal {
+        transform: scale(.9,.9)!important;
+        margin-bottom: 20px;
+    }
+    
+    #notes-about-social-anxiety-modal {
+        transform: scale(.55,.55)!important;
+        margin-bottom: -150px;
+        margin-top: -150px;
+    }
+    
+    #draft1-modal, #draft2-modal, #draft3-modal {
+        transform: scale(.85,.85)!important;
+    }
+    
+    #onboard-sitemap-modal {
+        transform: scale(.95,.95)!important;
+        margin-bottom: 20px;
+    }
+    
+    #paper-prototype-modal {
+        margin-bottom: -130px;
+    }
+    
+    #screener-q-modal {
+        margin-bottom: -10px;
+        margin-top: -50px;
+        transform: scale(.8,.8);
+    }
+    
+    #VA-modal {
+        margin-top: -30px;
+        margin-bottom: -10px;
+        transform: scale(.8,.8)!important
+    }
+    
+    .prototype-frame {
+        width: 300px;
+        height: 250px;
+        margin-left: 50px;
+    }
+    
+    .prototype-modal-caption {
+        padding-left: 0px;
+    }
+    
+    
  
     
 }
 
 
 
-@media screen and (max-width:1199px) and (orientation:portrait) {
+@media screen and (max-width:1199.98px) and (orientation:portrait) {
     .icon-size-adjust {
         margin-top: -32px;
         
@@ -1850,6 +2251,10 @@ li a:hover {
 
     }
     
+    #step7-visuals {
+        margin-left: -180px;
+    }
+    
     .step10-visuals {
         width: 80%;
     }
@@ -1887,10 +2292,82 @@ li a:hover {
     color: #F0A160;
     font-weight: 500;
     
-}
+    }   
     .footer-icons {
         transform: scale(.35,.35);
     }
+    
+    .modal-xl {
+        max-width: 820px;
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(2.8,2.8) translate(-45px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2.8,2.8) translate(45px, -8px);    
+
+    
+    }
+    
+    #notes-about-social-anxiety-modal {
+    transform: scale(.5,.5);
+    margin-top: -350px;
+    margin-bottom: -350px;
+
+    }
+    
+    #caption-social-anxiety {
+        margin-bottom: 80px;
+        margin-right: 0px;
+    }
+    
+    #paper-prototype-modal {
+    transform: scale(.45,.45)!important;
+    margin-top: -300px;
+    margin-bottom:-300px;
+    
+    }
+    
+    #caption-paper-prototype {
+        margin-right: 0px;
+    }
+    
+    #screener-q-modal {
+    margin-top: -160px;
+    margin-bottom: -150px;
+    
+    }
+    
+    
+    .prototype-frame {
+        width: 700px; 
+        height: 350px;
+        margin-bottom: -1px;
+        margin-left: 50px;
+        
+    } 
+    
+    .prototype-modal-caption {
+        margin-left: 35px;
+        
+    }
+    
+    .modal-caption {
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    #screener-q-modal {
+        margin-top: -40px;
+        margin-bottom: 0px;
+        transform: scale(.9,.9);
+    }
+    
+    
+    
     
     
 }
@@ -2327,6 +2804,74 @@ li a:hover {
         margin-left: 18px;
     }
     
+     .modal-xl {
+        max-width: 600px;
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(2.8,2.8) translate(-35px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2.8,2.8) translate(35px, -8px);    
+
+    
+    }
+    
+    .modal-caption {
+        font-size: 12px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    .prototype-modal-caption {
+        font-size: 12px;
+    }
+    
+    #notes-about-social-anxiety-modal {
+        transform: scale(.5,.5)!important;
+        margin-bottom: -200px;
+        margin-top: -250px;
+    }
+    
+    #caption-social-anxiety {
+        margin-left: 120px;
+    }
+    
+    #ideation-modal {
+        margin-bottom: -20px;
+    }
+    
+    #paper-prototype-modal {
+        margin-top: -150px;
+        margin-bottom: -150px;
+        transform: scale(.6,.6)!important
+        
+    }
+    
+    #caption-paper-prototype {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+    #screener-q-modal {
+        margin-top: -100px;
+        margin-bottom: -80px;
+        transform: scale(.65,.66)
+    }
+    
+    #VA-modal {
+        margin-bottom: 0px;
+    }
+    
+    .prototype-frame {
+        width: 400px;
+        height: 350px;
+    }
+    
+    
+    
 }
 
 @media screen and (max-width:765px) and (orientation:portrait) {
@@ -2598,6 +3143,83 @@ li a:hover {
         margin-top: -11px;
     }
     
+       
+    .modal-xl {
+        max-width: 450px;
+    }
+    
+    .modal-dialog {
+        margin-left: 80px;
+        
+    }
+    
+    .carousel-control-prev-icon {
+    transform: scale(2.5,2.5) translate(-30px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2.5,2.5) translate(30px, -8px);    
+
+    
+    }
+    
+    #empathy-map {
+        margin-top: -50px;
+        margin-bottom: -20px;
+    }
+    
+    #potential-users-modal, #potential-problems-modal {
+        transform: scale(.9,.9)!important;
+        margin-bottom: 20px;
+    }
+    
+    #notes-about-social-anxiety-modal {
+        transform: scale(.55,.55)!important;
+        margin-bottom: -150px;
+        margin-top: -150px;
+    }
+    
+    #caption-social-anxiety {
+        margin-left: 0px;
+    }
+    
+    #draft1-modal, #draft2-modal, #draft3-modal {
+        transform: scale(.85,.85)!important;
+    }
+    
+    #onboard-sitemap-modal {
+        transform: scale(.95,.95)!important;
+        margin-bottom: 20px;
+    }
+    
+    #paper-prototype-modal {
+        margin-bottom: -130px;
+    }
+    
+    #screener-q-modal {
+        margin-bottom: -10px;
+        margin-top: -50px;
+        transform: scale(.8,.8);
+    }
+    
+    #VA-modal {
+        margin-top: -30px;
+        margin-bottom: -10px;
+        transform: scale(.8,.8)!important;
+    }
+    
+    .prototype-frame {
+        width: 300px;
+        height: 250px;
+        margin-left: 50px;
+    }
+    
+    .prototype-modal-caption {
+        padding-left: 0px;
+    }
+    
+    
  
     
 }
@@ -2642,7 +3264,7 @@ li a:hover {
     }
     
     .step1-visual {
-        transform: scale(1,1);
+        transform: scale(.8,.8);
         margin-left: -20px;
     }
     
@@ -2672,9 +3294,54 @@ li a:hover {
         margin-left: -280px;
     }
     
+      .modal-xl {
+        max-width: 400px;
+    }
     
+    .modal-dialog {
+         margin-left: 40px; 
+        
+    }
+    
+     .carousel-control-prev-icon {
+    transform: scale(2,2) translate(-35px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(2,2) translate(35px, -8px);    
 
     
+    }
+    
+    #empathy-map {
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+    
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+    }
+    
+    #paper-prototype-modal {
+        margin-top: -80px;
+        transform: scale(.7,.7)!important;
+        margin-bottom: -100px;
+    }
+    
+    #caption-paper-prototype {
+        margin-bottom: 50px;
+    }
+    
+    #screener-q-modal {
+        margin-top: 0px;
+        transform: scale(.85,.85)!important;
+    }
+    
+    .prototype-frame {
+        margin-left: 30px;
+    }
     
 }
 
@@ -2682,6 +3349,55 @@ li a:hover {
     .process-padding {
         width: 10%;
     }
+    
+      .modal-adjust {
+        max-width: 320px;
+        margin-left: 20px;
+    }
+    
+    .modal-dialog {
+        margin-left: 25px;
+    }
+    
+    .carousel-indicators li {
+        width: 5px;
+        height: 5px;
+    }
+    
+         
+    .carousel-control-prev-icon {
+    transform: scale(1.8,1.8) translate(-28px, -8px);    
+        
+    }
+
+    .carousel-control-next-icon {
+    transform: scale(1.8,1.8) translate(29px, -8px);    
+
+    
+    }
+    
+    #notes-about-social-anxiety-modal {
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    
+    #paper-prototype-modal {
+        margin-bottom: -80px;
+    }
+    
+    #VA-modal {
+        margin-top: -20px;
+    }
+    
+    .prototype-frame {
+        margin-left: 0px;
+    }
+    
+    .prototype-modal-caption {
+        margin-left: 0px;
+    }
+    
+    
     
 }
 
